@@ -33,7 +33,7 @@ class Detail extends Component {
 
     render() {
         const beer = this.props.beer;
-        const { container, containerDetail, containerImg, scrollView } = DetailStyles;
+        const { container, containerDetail, containerImg, scrollView, img } = DetailStyles;
         return (
             <ScrollView style={scrollView}>
                 <View style={[container]}>
@@ -42,11 +42,7 @@ class Detail extends Component {
                             <Image 
                                 resizeMode="contain"
                                 source={{ uri: beer.image_url }} 
-                                style={{position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                bottom: 0,
-                                right: 0}}
+                                style={img}
                             />
                         </View>
                     </View>

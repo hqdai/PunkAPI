@@ -56,5 +56,12 @@ export const DetailStyles = {
     },
     scrollView: {
         marginTop: Platform.OS === 'ios' ? 0 : 60
+    },
+    img: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0
     }
 };
