@@ -1,5 +1,5 @@
-import storage from 'redux-persist/lib/storage';
-import { persistReducer, REHYDRATE } from 'redux-persist';
+import { REHYDRATE } from 'redux-persist';
+
 import { LOGIN_REQUESTED, LOGIN_SUCCESS, LOGIN_FAIL } from './AuthType';
 
 const INITIAL_STATE = {
@@ -40,10 +40,4 @@ const AuthReducer = (state = INITIAL_STATE, action) => {
     }
 };
 
-const persistConfig = {
-    key: 'auth',
-    storage,
-    blacklist: ['error', 'logging']
-};
-
-export default persistReducer(persistConfig, AuthReducer);
+export default AuthReducer;

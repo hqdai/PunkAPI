@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { connect } from 'react-redux';
+
 import { BeerLists } from '../../components/Beers';
 import BeerItemContainer from '../../components/Beers/BeerItemContainer';
+import { Button } from '../../components';
+
 import { MainStyles } from './styles';
+import { AuthStyle } from '../Auth/styles';
+import { BUTTON_LOADMORE_COLOR } from '../../themes';
 
 class Catalogue extends Component {
 //     constructor(props){
@@ -43,10 +48,10 @@ class Catalogue extends Component {
                 <BeerLists
                     data={this.dataSource}
                     renderItem={this.renderItem}
-                    keyExtractor={item => (item.id +item.name)}
+                    keyExtractor={item => (item.id + item.name)}
                     title="Catalogue"
                     numColumns={3}
-                />
+                />                
             </View>
        );
    }

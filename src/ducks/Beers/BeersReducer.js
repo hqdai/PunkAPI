@@ -1,5 +1,4 @@
-import storage from 'redux-persist/lib/storage';
-import { persistReducer, REHYDRATE } from 'redux-persist';
+import { REHYDRATE } from 'redux-persist';
 
 import {
     BEERS_REQUESTED,
@@ -94,10 +93,4 @@ const BeersReducer = (state = INITIAL_STATE, action) => {
     }
 };
 
-const persistConfig = {
-    key: 'data',
-    storage,
-    blacklist: ['fetching', 'error']
-};
-
-export default persistReducer(persistConfig, BeersReducer);
+export default BeersReducer;

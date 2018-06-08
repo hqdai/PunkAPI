@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 
-import { fetchBeers, fetchFirstBrewed } from './BeersAPI';
+import { fetchBeers, fetchFirstBrewed, fetchPagingBeers } from './BeersAPI';
 import { BEERS_REQUESTED, BEERS_SUCCESS, BEERS_FAIL } from './BeersType';
 
 export function* watcherBeersSaga() {
@@ -9,7 +9,7 @@ export function* watcherBeersSaga() {
 
 function* workerBeersSaga() {
     try {
-        const response = yield call(fetchBeers);
+        const response = yield call(fetchPagingBeers, 1, 20);
         //Add isFav props and set default value === false
         //Add typeof and set value is 'today'
         const lstBeers = response.data
