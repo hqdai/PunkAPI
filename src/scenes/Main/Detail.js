@@ -5,10 +5,10 @@ import Image from 'react-native-image-progress';
 import { Navigation } from 'react-native-navigation';
 import { connect } from 'react-redux';
 
-import { B, Content, DetailStyles } from '../../themes';
 import { ButtonHeart } from '../../components';
 import { beerUpdateFav } from '../../ducks/Beers/BeersActions';
 
+import { B, Content, DetailStyles } from './styles';
 
 class Detail extends Component {
     componentDidMount() {

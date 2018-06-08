@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, FlatList } from 'react-native';
-import { MainStyles } from '../../themes';
+import { MainStyles } from './styles';
 
 function BeerList(props) {
     const { data, renderItem, keyExtractor, horizontal, numColumns, title, titleCenter } = props;

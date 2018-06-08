@@ -5,14 +5,16 @@ import firebase from 'firebase';
 import { Button, Input, AppHeader } from '../../components';
 import { applyTabBase, MAIN_HOME } from '../../navigation';
 import { validateEmail, checkPassword } from '../../configs';
-import { IMAGES_PATH } from '../../themes/Images';
-import { BUTTON_REGISTER_COLOR, AuthLoginStyles, AuthStyle } from '../../themes';
+import { IMAGES_PATH } from '../../assets/images';
+import { AuthLoginStyles, AuthStyle } from './styles';
 import {
     INVALID_EMAIL,
     ERROR_PASSWORD,
     CONFIRM_PASSWORD_MISMATCH,
     AUTHENTICATION_FAIL
 } from '../../constants/Message';
+
+import { BUTTON_REGISTER_COLOR } from '../../themes';
 
 class Register extends Component {
     constructor(props) {

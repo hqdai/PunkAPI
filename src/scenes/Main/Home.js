@@ -6,7 +6,7 @@ import { Spinner } from '../../components';
 import { getBeers } from '../../ducks/Beers/BeersActions';
 import { BeerList } from '../../components/Beers';
 import BeerItemContainer from '../../components/Beers/BeerItemContainer';
-import { MainStyles } from '../../themes';
+import { MainStyles } from './styles';
 
 class Home extends Component {
     componentWillMount() {

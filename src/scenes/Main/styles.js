@@ -58,4 +58,3 @@ export const DetailStyles = {
         marginTop: Platform.OS === 'ios' ? 0 : 60
     }
 };
-

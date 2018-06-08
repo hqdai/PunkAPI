@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { connect } from 'react-redux';
 import { BeerList } from '../../components/Beers';
 import BeerItemContainer from '../../components/Beers/BeerItemContainer';
-import { MainStyles } from '../../themes';
+import { MainStyles } from './styles';
 
 class WishList extends Component {
      componentWillMount() {

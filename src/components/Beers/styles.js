@@ -60,3 +60,13 @@ export const beerItemViewStyles = {
         color: '#414141'
     }
 };
+
+export const MainStyles = {
+    headerStyle: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        paddingTop: 25,
+        paddingBottom: 15,
+        fontFamily: 'Helvetica'
+    }
+};

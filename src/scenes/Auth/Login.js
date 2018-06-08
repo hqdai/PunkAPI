@@ -10,8 +10,10 @@ import { validateEmail, checkPassword, FirebaseConfig } from '../../configs';
 
 import { applyTabBase, AUTH_REGISTER, MAIN_HOME } from '../../navigation';
 import { INVALID_EMAIL, ERROR_PASSWORD } from '../../constants/Message';
-import { IMAGES_PATH } from '../../themes/Images';
-import { BUTTON_LOGIN_COLOR, AuthLoginStyles, AuthStyle } from '../../themes';
+import { IMAGES_PATH } from '../../assets/images';
+import { AuthLoginStyles, AuthStyle } from './styles';
+
+import { BUTTON_LOGIN_COLOR } from '../../themes';
 
 class Login extends Component {
     constructor(props) {

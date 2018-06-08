@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Text, View, Image, ImageBackground } from 'react-native';
 import { AccessToken, LoginManager } from 'react-native-fbsdk';
+
 import { Button } from '../../components';
 import { AUTH_LOGIN, MAIN_HOME } from '../../navigation';
-import { AuthStyle, BUTTON_EMAIL_COLOR, BUTTON_FACEBOOK_COLOR } from '../../themes';
-import { IMAGES_PATH } from '../../themes/Images';
+import { IMAGES_PATH } from '../../assets/images';
+import { BUTTON_EMAIL_COLOR, BUTTON_FACEBOOK_COLOR } from '../../themes';
+
+import { AuthStyle } from './styles';
 
 class Welcome extends Component {
     constructor(props) {
