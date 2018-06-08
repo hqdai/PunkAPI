@@ -26,14 +26,6 @@ export const Content = (props) => (
     </View>
 );
 
-export const TagLine = (props) => (
-    <View style={{ alignItems: 'center', paddingBottom: 20 }}>
-        <Text style={[styles.appFont, { color: '#AFAFAF' }]}>
-            {props.children}
-        </Text>
-    </View>
-);
-
 export const MainStyles = {
     containerStyle: {
         backgroundColor: 'white',
