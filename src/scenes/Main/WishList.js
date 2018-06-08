@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { connect } from 'react-redux';
-import { BeerList } from '../../components/Beers';
+import { BeerLists } from '../../components/Beers';
 import BeerItemContainer from '../../components/Beers/BeerItemContainer';
 import { MainStyles } from './styles';
 
@@ -31,7 +31,7 @@ class WishList extends Component {
         } = MainStyles;
         return (
             <View style={[containerStyle, { alignItems: 'center' }]}>
-                <BeerList
+                <BeerLists
                     data={this.dataSource}
                     renderItem={this.renderItem}
                     keyExtractor={item => (item.id + item.name)}

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { Spinner } from '../../components';
 import { getBeers } from '../../ducks/Beers/BeersActions';
-import { BeerList } from '../../components/Beers';
+import { BeerLists } from '../../components/Beers';
 import BeerItemContainer from '../../components/Beers/BeerItemContainer';
 import { MainStyles } from './styles';
 
@@ -43,14 +43,14 @@ class Home extends Component {
         return (
             <ScrollView>
                 <View style={[containerStyle, { paddingLeft: 10 }]}>
-                    <BeerList
+                    <BeerLists
                         data={this.dataSource}
                         renderItem={this.renderItem}
                         keyExtractor={item => (item.id + item.name)}
                         horizontal
                         title="Today"
                     />
-                    <BeerList
+                    <BeerLists
                         data={this.dataSourceFirstBrewed}
                         renderItem={this.renderItem}
                         keyExtractor={item => (item.id + item.name)}
